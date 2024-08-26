@@ -1,0 +1,96 @@
+.container-fluid {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .para1{
+    font-weight: bold;
+    color: #0628e7;
+  }
+  .conclusion {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 24px;
+    color: #00072d;
+    max-width: 1200px;
+    animation: zoom forwards 2s;
+  }
+
+  .contact button{
+    background-image: linear-gradient(to right, #2b5876 0%, #bb2cce  51%, #2b5876  100%);
+    /* margin: 10px;
+    padding: 15px 45px; */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #6cbdd6;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .contact  a{
+    text-decoration: none;
+  }
+
+  .contact button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @keyframes zoom {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .contact {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    gap: 15px;
+  }
+  .contact div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    box-shadow: 0 0 10px #00072d;
+    height: 300px;
+    animation: zoom forwards 2s;
+  }
+  /* @keyframes blend {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+  .contact h2 {
+    margin: 20px 0 25px;
+  }
+  .contact div i {
+    font-size: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+  .declaration {
+    position: relative;
+    top: 4rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }

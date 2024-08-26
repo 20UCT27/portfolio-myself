@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+  }
+  /* .container{
+    background: #03045e;
+  } */
+  .about {
+    align-items: center;
+    position: relative;
+    top: 50px;
+    box-shadow: 6px 6px 6px rgb(68, 67, 67);
+  }
+  .profile_pic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .profile_pic {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 0;
+    animation: moving forwards 1 3s;
+  }
+
+
+  .para {
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .para h1,
+  .edu-det h1 {
+    color: #ffffff;
+    font-size: 50px;
+  }
+  /* .edu-det h1 {
+    color: #013220;
+    font-size: 50px;
+  } */
+  .para p {
+    text-align: justify;
+    font-weight: bold;
+    font-size: 18px;
+    /* color: #00ff; */
+    background: linear-gradient(45deg, #013220, #03045e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @keyframes moving {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30%;
+    }
+  }
+  
+  .edu {
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    box-shadow: 6px 6px 6px rgb(68, 67, 67);
+  }
+  .edu-det {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    /* animation: sliding forwards 1 3s; */
+    /* -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+  /* @keyframes moving {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30%;
+    }*/
+  } 
+  /* .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .logo img {
+    width: 350px;
+    height: 350px;
+    align-items: center;
+  }
+  .highlight {
+    font-weight: bolder;
+    color: #03045e;
+  }
+  
+  .certificates {
+    gap: 25px;
+    position: relative;
+    top: 90px;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+  }
+  .certificates button{
+    background-image: linear-gradient(to right, #2b5876 0%, #bb2cce  51%, #2b5876  100%);
+    margin: 10px;
+    width: 250px;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    text-decoration: none;
+    color: white;            
+    box-shadow: 0 0 20px #6cbdd6;
+    border-radius: 20px;
+    display: flex;
+  }
+  .certificates button:hover{
+    background-position: right center; /* change the direction of the change here */
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .left h6,
+  .right h6 {
+    font-weight: bolder;
+    font-size: 18px;
+  }
+  .left :nth-child(2),
+  .left :nth-child(1) {
+    color: #013220;
+  }
+  .right :nth-child(2),
+  .right :nth-child(1) {
+    color: #013220;
+  }
+  .left p,
+  .right p {
+    text-align: justify;
+    color: #03045e;
+    font-size: 16px;
+  }
+  .left,
+  .right {
+    box-shadow: 0px 0px 15px gray;
+    width: 550px;
+    padding: 20px;
+  }
+  .left .btn,
+  .right .btn {
+    width: fit-content;
+  }
+  .left .btn a,
+  .right .btn a {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 1000px) {
+    @keyframes moving {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+    .edu-det {
+      order: 2;
+    }
+    .profile_pic img {
+      width: 300px;
+      height: 300px;
+      border-radius: 20%;
+    }
+    .logo img {
+      width: 300px;
+      height: 300px;
+    }
+    .left,
+    .right {
+      width: 350px;
+    }
+  }
+  
+  footer {
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding-left: 0;
+  }
+  .fa-brands,
+  .fa-solid {
+    font-size: xx-large;
+  }
